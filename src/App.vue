@@ -24,7 +24,8 @@ export default {
     getPosts(){
       axios.get(this.apiBaseUrl + this.apiUrls.posts)
       .then((response) => {
-        console.log(response);
+        // console.log(response);
+        this.posts = response.data.results;
       })
       .catch((error) => {
         console.log(error);
@@ -39,7 +40,7 @@ export default {
 
 <template>
   <AppHeader />
-  <AppMain />
+  <AppMain :data="posts" />
   <AppFooter />
 </template>
 
