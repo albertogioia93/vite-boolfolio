@@ -1,3 +1,13 @@
+<script>
+import TypeList from './TypeList.vue';
+import TechnologyList from './TechnologyList.vue';
+
+export default {
+    name: "AppHeader",
+    components: { TypeList, TechnologyList },
+    // components: { TechnologyList }
+}
+</script>
 <template>
     <header>
         <div class="container">
@@ -20,17 +30,17 @@
                                 Projects
                             </router-link>
                         </li>
+                        <li>
+                           <TypeList />
+                        </li>
+                        <li>
+                           <TechnologyList />
+                        </li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
 </template>
-
-<script>
-export default {
-    name: 'AppHeader'
-}
-</script>
 
 <style></style>
