@@ -61,6 +61,9 @@ export default {
             </h2>
             <p>{{ post.content }}</p>
             <hr>
+            <!-- <router-link :to="{ name: 'technology', params: {slug: post.technology.slug} }" class="nav-link">
+                {{ post.technology.name }}
+            </router-link> -->
             <div class="my-3" v-show="post.technologies.length">
                 <span class="badge text-bg-warning me-1" v-for="technology in post.technologies">{{ technology.name }}</span>
             </div>
