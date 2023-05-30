@@ -1,12 +1,12 @@
 <template>
-    <div class="card">
+    <div class="card h-100">
         <img v-if="post.image" :src="post.image" class="card-img-top" alt="...">
-        <div class="card-body">
+        <div class="card-body d-flex flex-column">
             <h5 class="card-title">{{ post.title }}</h5>
             <p v-if="post.content" class="card-text">{{ post.content.substring(0, this.contentLenght) + '...' }}</p>
     
 
-            <router-link :to="{ name: 'post', params: { slug: post.slug } }" class="btn btn-primary">
+            <router-link :to="{ name: 'post', params: { slug: post.slug } }" class="btn btn-warning mt-auto">
                 Leggi descrizione progetto
             </router-link>
         </div>

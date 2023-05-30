@@ -52,7 +52,7 @@ export default {
             return commentDate.toLocaleString();
         },
         getPost() {
-            axios.get(this.apiBaseUrl + this.apiUrls.posts + "/" + this.$route.params.slug)
+            axios.get(`${this.store.apiBaseUrl}/posts/${this.$route.params.slug}`)
                 .then((response) => {
                     // console.log(response);
                     this.post = response.data.results;
@@ -93,7 +93,7 @@ export default {
             <h1 class="mt-5 mb-3">{{ post.title }}</h1>
             <h2>
                 <router-link :to="{ name: 'type', params: {slug: post.type.slug} }" class="nav-link">
-                    {{ post.type.name }}
+                    Type: {{ post.type.name }}
                 </router-link>
             </h2>
             <p>{{ post.content }}</p>

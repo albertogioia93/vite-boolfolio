@@ -1,7 +1,7 @@
 <script>
 // import axios from 'axios';
 import AppHeader from './components/AppHeader.vue';
-// import AppMain from './components/AppMain.vue';
+import AppMain from './components/AppMain.vue';
 import AppFooter from './components/AppFooter.vue';
 
 export default {
@@ -17,7 +17,7 @@ export default {
   // },
   components: {
     AppHeader,
-    // AppMain,
+    AppMain,
     AppFooter
   }
   // methods: {
@@ -40,9 +40,7 @@ export default {
 
 <template>
   <AppHeader />
-  <!-- <AppMain :data="posts" /> -->
-  <!-- parte soggetta a cambiamenti -->
-  <router-view></router-view>
+  <AppMain />
   <AppFooter />
 </template>
 

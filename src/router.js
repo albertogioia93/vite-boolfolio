@@ -1,7 +1,7 @@
 import { createWebHistory, createRouter } from 'vue-router';
 
 //import delle pagine che sono incluse nel router
-import AppHome from './pages/AppHome.vue';
+import HomePage from './pages/HomePage.vue';
 import AboutPage from './pages/AboutPage.vue';
 import BlogPage from './pages/BlogPage.vue';
 import PostPage from './pages/PostPage.vue';
@@ -16,7 +16,7 @@ const router = createRouter({
         {
             path: '/',
             name: 'home',
-            component: AppHome
+            component: HomePage
         },
         {
             path: '/chi-siamo',

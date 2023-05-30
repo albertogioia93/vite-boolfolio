@@ -1,16 +1,17 @@
 <script>
 export default {
-  name: "AboutPage"
+  name: "HomePage"
 }
 </script>
 
 
 <template>
   <div class="container my-4">
-    <h1>About Page</h1>
+    <h1>Home Page</h1>
     <div class="content my-3">
-      <p>Bella Pè Boolean</p>
+      <p>Esercizio Boolpress</p>
     </div>
+
 
   </div>
 </template>
