@@ -9,7 +9,7 @@ export default {
   <div class="container my-4">
     <h1>Home Page</h1>
     <div class="content my-3">
-      <p>Esercizio Boolpress</p>
+      <p>LARAVEL BOOLFOLIO</p>
     </div>
 
 
